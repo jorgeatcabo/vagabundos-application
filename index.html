@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/foundation.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Vagabundos App</title>
+</head>
+
+<body>
+
+  <div class="grid-y medium-grid-frame">
+    <div class="hero-section header medium-cell-block-container">
+      <div class="hero-section-text">
+        <h1>Vagabundos App</h1>
+        <h5>We travel not to escape life. But for life not to escape us.</h5>
+      </div>
+    </div>
+    <div class="cell shrink header medium-cell-block-container">
+      <div class="cell row small-2" id="airplane">
+      <BR></BR>
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-1">
+        </div>
+        <div class="cell medium-2 text-right">
+          <h5 class="header-color">Search Now</h5>
+        </div>
+        <div class="cell medium-2">
+          <input class="origin-city" type="text" placeholder="Type your origin city">
+        </div>
+        <div class="cell medium-2">
+          <input class="destination-city" type="text" placeholder="Type your destination city">
+        </div>
+        <div class="cell medium-2">
+          <input class="depature-date" type="date" placeholder="Departure date">
+        </div>
+    
+        <div class="cell medium-2">
+          <button type="button" class="button primary expanded  city-button">Search!</button>
+        </div>
+      </div>
+    </div>
+      <div class="cell medium-auto medium-cell-block-container ">
+        <div class="grid-x grid-padding-x medium-cell-block-y">
+          <div id="search-results" class="cell small-2">
+            <div style="width: 100%">
+              <h5 class="header-color">Your Recent Searches</h5>
+            </div>
+          </div>
+
+          <div class="cell auto medium-cell-block-y"  style= "height: 500px; overflow-y: scroll;" >
+            <div class="card" style="width: 100%;">
+              <div id="origin-destination" class="card-divider">
+              </div>
+              <div class="card-section">
+                <div id="spinner" class="loader"></div>
+                <ul id="flights" class="accordion" data-accordion>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Flights</a>
+                    <div id="flights-content" class="accordion-content" data-tab-content>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="cards">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p><button id="modal-button-error" class="button" data-open="exampleModal1" style="display: none;">Click me for a
+        modal</button></p>
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <h1 id="modal-text">Please fill out the information correctly.</h1>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <p><button id="modal-button-not-found" class="button" data-open="exampleModal2" style="display: none;">Click me for
+        a
+        modal</button></p>
+    <div class="reveal" id="exampleModal2" data-reveal>
+      <h1 id="modal-text">Flights not found.</h1>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+  </div>
+  <div class="cell shrink footer">
+    <h6 class="header-color text-center align-middle">Made with fun. Powered by <small><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Amadeus_%28CRS%29_Logo.svg/1280px-Amadeus_%28CRS%29_Logo.svg.png"
+          alt="Amadeus Logo" width="150" height="22" style="vertical-align:top"></small></h6>
+  </div>
+</body>
+
+</html>

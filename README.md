@@ -23,7 +23,7 @@ This project has been deployed to GitHub.
 https://github.com/jorgeatcabo/project-1
 
  To get this project up and running, you can follow the deployment link.
-https://jorgeatcabo.github.io/project-1/
+https://jorgeatcabo.github.io/vagabundos-app/
 
  
 ## Usage
